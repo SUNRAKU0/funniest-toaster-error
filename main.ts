@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// The bagel has already seen the inside of this toaster once, and that was enough.
 const line = 'Error: this bagel has been toasted before. I will not do it twice.';
 
 mkdirSync(outDir, { recursive: true });
